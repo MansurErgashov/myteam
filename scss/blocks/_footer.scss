@@ -1,0 +1,145 @@
+.footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #002529;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+.footer__box1 {
+}
+.footer__box1-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+.footer__box1-link-img {
+    display: block;
+}
+.footer__box1-nav {
+}
+.footer__list {
+    @include list-unstyled;
+}
+.footer__item {
+}
+.footer__item-link {
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: $color-white;
+    opacity: 0.6;
+}
+.footer__box2-wrapper {
+
+}
+.footer__box2 {
+    text-align: right;
+}
+
+.footer__box2-link {
+    display: inline-block;
+    text-decoration: none;
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+.footer__box2-link-img {
+}
+.footer__box2-box {
+    
+}
+.footer__box2-box-desc {
+    font-family: $font-primary;
+    margin: 51px 0 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+@include breakpoint-down(1080px) {
+    .footer__wrapper {
+        width: 100%;
+        max-width: 550px;
+    }
+}
+@include breakpoint-down(980px) {
+    .footer__wrapper {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+@include breakpoint-down(890px) {
+    .footer__wrapper {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+@include breakpoint-down(800px) {
+    .footer__wrapper {
+        width: 100%;
+        max-width: 430px;
+    }
+}
+@include breakpoint-down(768px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+    .footer__box2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 32px;
+    }
+    
+    .footer__box2-box-desc {
+        margin: 0;
+    }
+}
+@include breakpoint-down(550px) {
+    .footer__box1-nav {
+        display: block;
+    }
+}
+@include breakpoint-down(500px) {
+    .footer {
+        padding-top: 66px;
+        padding-bottom: 64px;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .footer__list {
+        text-align: center;
+        margin-top: 24px;
+    }
+    .footer__box2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .footer__box2-box {
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,128 @@
+
+.about {
+    position: relative;
+    padding-top: 43px;
+    padding-bottom: 120px;
+    background-color: #014E56;
+}
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+.about__heading {
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: capitalize;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.about__desc {
+    &::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 4px;
+        margin-bottom: 40px;
+        background-color: #F67E7E;
+    }
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    max-width: 730px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.about__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.about__img--mobile {
+    display: none;
+}
+@include breakpoint-down(1200px) {
+    .about__desc {
+        max-width: 650px;
+    }
+}
+@include breakpoint-down(1000px) {
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about__desc {
+        &::before {
+            display: none;
+            margin-bottom: 0;
+        }
+        text-align: center;
+        margin-top: 0;
+    }
+}
+@include breakpoint-down(820px) {
+    .about__desc {
+        width: 550px;
+    }
+}
+@include breakpoint-down(768px) {
+    .about {
+        padding-bottom: 112px;
+    }
+    .about__desc {
+        max-width: 457px;
+    }
+}
+@include breakpoint-down(650px) {
+    .about__img {
+        display: none;
+    }
+    .about__img--mobile {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+@include breakpoint-down(580px) {
+    .about__desc {
+        width: 450px;
+    }
+}
+@include breakpoint-down(500px) {
+    .about__desc {
+        width: 400px;
+    }
+}
+@include breakpoint-down(450px) {
+    .about__desc {
+        width: 350px;
+    }
+}
+@include breakpoint-down(390px) {
+    .about {
+        padding-bottom: 108px;
+    }
+    .about__desc {
+        width: 327px;
+    }
+}
+@include breakpoint-down(350px) {
+    .about__desc {
+        width: 270px;
+    }
+}
+@include breakpoint-down(320px) {
+    .about__desc {
+        width: 250px;
+    }
+}

@@ -1,0 +1,215 @@
+.meet {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 168px;
+    background-color: #004047;
+}
+.meet__container {
+}
+.meet__img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.meet__img1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.meet__heading {
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.meet__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+.meet__item {
+    position: relative;
+    width: 350px;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    background-color: #012F34;
+    &:nth-child(n+4) {
+        margin-top: 76px;
+    }
+}
+.meet__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.meet__item-link-img {
+}
+.meet__item-link-descbg {
+    font-family: $font-primary;
+    margin: 16px 0 0 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+    &:last-child {
+        margin: 0;
+        padding: 0;
+    }
+}
+.meet__item-link-descend {
+    font-family: $font-primary;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    &:last-child {
+        padding: 0;
+        margin-top: 8px;
+        max-width: 254px;
+    }
+}
+.meet__item-link-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 24px;
+}
+.meet__item-link-link-img {
+    display: block;
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+.meet__item-link-btn {
+    padding: 0;
+    position: absolute;
+    bottom: -28px;
+    border-radius: 50%;
+    border: none;
+    background-color: #F67E7E;
+    
+}
+.meet__item-link-btn:hover {
+    transform: rotate(-45deg);
+}
+.meet__item-link-btn--green {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: absolute;
+    left: 155px;
+    bottom: -28px;
+    border-radius: 50%;
+    border: none;
+    background-color: #79C8C7;
+    
+}
+.meet__item-link-btn-img {
+    padding: 17px 18px 15px 18px;
+    box-sizing: content-box;
+}
+.meet__img2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+@include breakpoint-down(1110px) {
+    .meet__item {
+        width: 300px;
+    }
+}
+@include breakpoint-down(960px) {
+    .meet__list {
+        justify-content: center;
+    }
+    .meet__item {
+        &:nth-child(2n+1) {
+            margin-right: 25px;
+        }
+        &:nth-child(n+3) {
+            margin-top: 76px;
+        }
+    }
+    .meet__item-link-btn--green {
+        left: 132px;
+    }
+}
+@include breakpoint-down(768px) {
+    .meet__heading {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .meet__item {
+        width: 281px;
+    }
+    .meet__item {
+        &:nth-child(2n+1) {
+            margin-right: 11px;
+        }
+    }
+    .meet__item-link-btn--green {
+        left: 132px;
+    }
+}
+@include breakpoint-down(650px) {
+    .meet__img {
+        display: block;
+    }
+    .meet__img1 {
+        display: none;
+    }
+    .meet__item {
+        width: 327px;
+    }
+    .meet__item {
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+        &:nth-child(n+2) {
+            margin-top: 76px;
+        }
+    }
+    .meet__item-link-btn--green {
+        left: 132px;
+    }
+}
+@include breakpoint-down(370px) {
+    .meet__item {
+        width: 300px;
+    }
+}
+@include breakpoint-down(340px) {
+    .meet__item {
+        width: 270px;
+    }
+    .meet__item-link-btn--green {
+        left: 115px;
+    }
+}
+@include breakpoint-down(320px) {
+    .meet__item {
+        width: 250px;
+    }
+    .meet__item-link-btn--green {
+        left: 105px;
+    }
+}

@@ -1,0 +1,29 @@
+.contact-us {
+    font-family: $font-primary;
+    margin: 0;
+    padding: 9px 33px 11px 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #FFFFFF;
+    &:hover {
+        background-color: #FFFFFF;
+        color: #014E56;
+    }
+}
+.contact-us--started {
+    color: $color-dark;
+    border-color: $color-dark;
+}
+@include breakpoint-down(550px) {
+    .contact-us {
+        display: none;
+    }
+    .contact-us--started {
+        display: block;
+    }
+}

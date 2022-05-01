@@ -1,0 +1,27 @@
+.navigation {
+}
+.navigation__list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+.navigation__item {
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+.navigation__item-link {
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+@include breakpoint-down(550px) {
+    .navigation {
+        display: none;
+    }
+}
